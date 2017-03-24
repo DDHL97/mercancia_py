@@ -1,6 +1,6 @@
 import web
 
-db = web.database(dbn='mysql',dh='jnc6n3xpbgc3kek2.chr7pe7iynqr.eu-west-1.rds.amazonaws.com' db='gaa3ikw2m8jp29p9', user='tls6apgwcf9f8z0g', pw='cbio915ps7tg27jj')
+db = web.database(dbn='mysql',host='jnc6n3xpbgc3kek2.chr7pe7iynqr.eu-west-1.rds.amazonaws.com', db='gaa3ikw2m8jp29p9', user='tls6apgwcf9f8z0g', pw='cbio915ps7tg27jj')
 
 def get_posts():
     return db.select('productos', order='id_producto')
